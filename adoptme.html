@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption Form - PokéPaws</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border: 2px solid black;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        input[type="text"], 
+        input[type="tel"], 
+        input[type="email"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            display: block;
+            box-sizing: border-box; 
+        }
+
+        .submit-btn {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .section-label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Pokémon Adoption Application</h2>
+        <p align="center"><a href="index.html">Back to Home</a></p>
+        <hr>
+
+        <form>
+            <b class="section-label">Personal Information</b>
+            
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Tel:</label>
+            <input type="tel" placeholder="08X-XXX-XXXX">
+
+            <label>Email:</label>
+            <input type="email" placeholder="example@email.com">
+
+            <hr>
+
+            <b class="section-label">Environment Information</b>
+            
+            <label>Address:</label>
+            <input type="text" placeholder="Enter address">
+
+            <label>Shelter Type:</label>
+            <select>
+                <option>บ้านสวน</option>
+                <option>บ้านเดี่ยว</option>
+                <option>บ้านทาวน์โฮม</option>
+                <option>คอนโดมิเนียม/หอพัก</option>
+            </select>
+
+            <label>Adoption Setting:</label><br>
+            <input type="radio" name="setting"> เลี้ยงสุนัขภายในบ้าน<br>
+            <input type="radio" name="setting"> เลี้ยงสุนัขภายนอกบ้าน<br>
+            <br>
+
+            <hr>
+
+            <table border="0">
+                <tr>
+                    <td valign="top"><input type="checkbox"></td>
+                    <td>การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะ pokemon สุนัข</td>
+                </tr>
+            </table>
+            <br>
+
+            <input type="submit" value="Submit Application" class="submit-btn">
+        </form>
+
+        <p align="center">For more information, please contact<br>
+        Sitthichok Junrod (6833262521)</p>
+    </div>
+
+</body>
+</html>
